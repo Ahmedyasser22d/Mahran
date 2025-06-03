@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmed Mehran | OnlyFans 🔥</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #e0f7ff;
+      font-family: 'Poppins', sans-serif;
+      color: #14171a;
+      direction: rtl;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 25px 15px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 6px 22px rgba(0, 170, 255, 0.15);
+      overflow: hidden;
+      color: #14171a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      user-select: none;
+    }
+
+    header {
+      background-color: #00bfff;
+      color: white;
+      padding: 22px 0;
+      font-weight: 700;
+      font-size: 2.3rem;
+      letter-spacing: 0.17em;
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase;
+      box-shadow: 0 4px 14px rgba(0, 191, 255, 0.55);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .profile-pic {
+      margin: 22px 0;
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #00bfff;
+      box-shadow: 0 0 22px #00bfffcc;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 38px #00bfffdd;
+    }
+
+    .info {
+      padding: 0 32px 32px;
+      text-align: center;
+    }
+
+    .info h1 {
+      font-weight: 700;
+      font-size: 2.7rem;
+      margin-bottom: 12px;
+      color: #00bfff;
+    }
+
+    .info p {
+      font-size: 1.25rem;
+      line-height: 1.65;
+      margin-bottom: 28px;
+      color: #444;
+    }
+
+    .highlight {
+      color: #007acc;
+      font-weight: 700;
+    }
+
+    .sexy-lines {
+      font-size: 1.2rem;
+      color: #ff004f;
+      font-weight: 700;
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+
+    .sexy-lines span {
+      display: inline-block;
+      margin: 0 6px;
+    }
+
+    .btn {
+      background-color: #ff004f;
+      color: white;
+      padding: 18px 75px;
+      font-weight: 700;
+      font-size: 1.35rem;
+      border-radius: 55px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.35s ease, box-shadow 0.35s ease;
+      text-transform: uppercase;
+      box-shadow: 0 10px 26px rgba(255, 0, 79, 0.85);
+      display: inline-block;
+      text-decoration: none;
+      user-select: none;
+    }
+
+    .btn:hover {
+      background-color: #cc003f;
+      box-shadow: 0 14px 34px rgba(204, 0, 63, 0.9);
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      background: #ffe6f0;
+      padding: 22px 10px;
+      font-weight: 600;
+      font-size: 1.15rem;
+      color: #ff004f;
+      width: 100%;
+      border-top: 1.5px solid #ff99b3;
+    }
+
+    .stats div {
+      text-align: center;
+      flex: 1;
+    }
+
+    .stats .number {
+      font-size: 1.75rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 7px;
+      color: #14171a;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      padding: 28px 28px 44px;
+      width: 100%;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 5px 28px rgba(255, 0, 79, 0.35);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      object-fit: cover;
+      height: 195px;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.12);
+      box-shadow: 0 0 48px #ff004fdd;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding: 22px 12px;
+      border-top: 1.3px solid #ffd6e3;
+      width: 100%;
+      user-select: none;
+    }
+
+    /* Modal styles */
+    #modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.87);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      cursor: pointer;
+      user-select: none;
+    }
+    #modal img {
+      max-width: 92vw;
+      max-height: 92vh;
+      border-radius: 18px;
+      box-shadow: 0 0 38px #ff004fcc;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        margin: 0 14px;
+      }
+
+      .info h1 {
+        font-size: 2.2rem;
+      }
+
+      .info p, .sexy-lines {
+        font-size: 1.15rem;
+      }
+
+      .btn {
+        padding: 16px 60px;
+        font-size: 1.2rem;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 24px 24px 36px;
+      }
+
+      .gallery img {
+        height: 230px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>ONLYFANS 🔥</header>
+
+    <img
+      class="profile-pic"
+      src="https://i.ibb.co/3yP3BpRJ/IMG-20250531-WA0044.jpg"
+      alt="Ahmed Mehran"
+      draggable="false"
+    />
+
+    <div class="info">
+      <h1>احمد مهران</h1>
+      <p>
+        أهلاً في عالمي الخاص! <br />
+        محتوى <span class="highlight">ساخن 🔥</span>، <span class="highlight">سخيف 🤪</span>، و
+        <span class="highlight">جريء 😈</span> عشان تسد فضولك.<br />
+        الاشتراك: <span class="highlight">19.99$ شهرياً 💸</span> 🔞
+      </p>
+
+      <div class="sexy-lines">
+        <span>💋 جاهز تشوف أكثر من اللي تخيلته؟</span>
+        <span>🔥 فيديوهات 🔥 صور جريئة</span>
+        <span>🍑 مفاجآت لا تُقاوم!</span>
+        <span>🔞 محتوى خاص للكبار فقط!</span>
+        <span>✨ اشترك وعيش التجربة مع احمد مهران!</span>
+      </div>
+
+      <a href="https://onlyfans.com/yourprofile" target="_blank" class="btn">اشترك دلوقتي</a>
+    </div>
+
+    <div class="stats">
+      <div>
+        <span class="number">325+</span> منشورات
+      </div>
+      <div>
+        <span class="number">1.2k</span> مشترك
+      </div>
+      <div>
+        <span class="number">5k</span> لايك
+      </div>
+    </div>
+
+    <div class="gallery">
+      <img src="https://i.ibb.co/3yP3BpRJ/IMG-20250531-WA0044.jpg" alt="صورة 1" />
+      <img src="https://i.ibb.co/Cv7VXyM/IMG-20250531-WA0046.jpg" alt="صورة 2" />
+      <img src="https://i.ibb.co/3yP3BpRJ/IMG-20250531-WA0044.jpg" alt="صورة 3" />
+      <img src="https://i.ibb.co/Cv7VXyM/IMG-20250531-WA0046.jpg" alt="صورة 4" />
+    </div>
+
+    <footer>© 2025 Ahmed Mehran - All Rights Reserved</footer>
+  </div>
+
+  <div id="modal">
+    <img src="" alt="تكبير الصورة" />
+  </div>
+
+  <script>
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const modal = document.getElementById('modal');
+    const modalImg = modal.querySelector('img');
+
+    galleryImages.forEach(img => {
+      img.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        modalImg.src = img.src;
+      });
+    });
+
+    modal.addEventListener('click', () => {
+      modal.style.display = 'none';
+      modalImg.src = '';
+    });
+  </script>
+</body>
+</html
