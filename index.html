@@ -1,438 +1,267 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>احمد مهران | OnlyFans 🔥</title>
+  <title>OnlyFans - Ahmed Mehran</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
     }
-
     body {
-      background: #e0f7ff;
-      font-family: 'Poppins', sans-serif;
+      background: #e4e6eb;
       color: #14171a;
-      direction: rtl;
       min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      padding: 25px 15px;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
-
-    .container {
-      width: 100%;
-      max-width: 500px;
-      background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 6px 22px rgba(0, 170, 255, 0.15);
-      overflow: hidden;
-      color: #14171a;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      user-select: none;
-    }
-
     header {
-      background-color: #00bfff;
-      color: white;
-      padding: 22px 0;
-      font-weight: 700;
-      font-size: 2.3rem;
-      letter-spacing: 0.17em;
-      text-align: center;
-      width: 100%;
-      text-transform: uppercase;
-      box-shadow: 0 4px 14px rgba(0, 191, 255, 0.55);
-      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
     }
-
-    .profile-pic {
-      margin: 22px 0;
-      width: 190px;
-      height: 190px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 6px solid #00bfff;
-      box-shadow: 0 0 22px #00bfffcc;
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    header img {
+      height: 28px;
     }
-    .profile-pic:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 38px #00bfffdd;
-    }
-
-    .info {
-      padding: 0 32px 32px;
-      text-align: center;
-    }
-
-    .info h1 {
-      font-weight: 700;
-      font-size: 2.7rem;
-      margin-bottom: 12px;
-      color: #00bfff;
-    }
-
-    .info p {
-      font-size: 1.25rem;
-      line-height: 1.65;
-      margin-bottom: 28px;
-      color: #444;
-    }
-
-    .highlight {
-      color: #007acc;
-      font-weight: 700;
-    }
-
-    .sexy-lines {
+    header .more {
       font-size: 1.2rem;
-      color: #ff004f;
-      font-weight: 700;
-      margin-bottom: 28px;
-      line-height: 1.5;
-    }
-
-    .sexy-lines span {
-      display: inline-block;
-      margin: 0 6px;
-    }
-
-    .btn {
-      background-color: #ff004f;
-      color: white;
-      padding: 18px 75px;
-      font-weight: 700;
-      font-size: 1.35rem;
-      border-radius: 55px;
-      border: none;
+      color: #666;
       cursor: pointer;
-      transition: background-color 0.35s ease, box-shadow 0.35s ease;
-      text-transform: uppercase;
-      box-shadow: 0 10px 26px rgba(255, 0, 79, 0.85);
-      display: inline-block;
-      text-decoration: none;
-      user-select: none;
     }
-
-    .btn:hover {
-      background-color: #cc003f;
-      box-shadow: 0 14px 34px rgba(204, 0, 63, 0.9);
+    .content {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: relative;
+      transition: filter 0.3s ease;
     }
-
+    .blurred {
+      filter: blur(10px);
+      pointer-events: none;
+    }
+    .cover {
+      width: 100%;
+      height: 200px;
+      background: url('https://i.ibb.co/Qc91BJX/cover-sample.jpg') center/cover no-repeat;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      position: absolute;
+      top: 140px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      object-fit: cover;
+    }
+    .profile-info {
+      padding: 70px 20px 20px;
+      text-align: center;
+    }
+    .profile-info h1 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #14171a;
+    }
+    .profile-info p {
+      font-size: 1rem;
+      color: #657786;
+      margin: 10px 0 20px;
+    }
     .stats {
       display: flex;
       justify-content: space-around;
-      background: #ffe6f0;
-      padding: 22px 10px;
-      font-weight: 600;
-      font-size: 1.15rem;
-      color: #ff004f;
-      width: 100%;
-      border-top: 1.5px solid #ff99b3;
-    }
-
-    .stats div {
-      text-align: center;
-      flex: 1;
-    }
-
-    .stats .number {
-      font-size: 1.75rem;
-      font-weight: 700;
-      display: block;
-      margin-bottom: 7px;
-      color: #14171a;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      padding: 28px 28px 44px;
-      width: 100%;
-    }
-
-    .gallery img {
-      width: 100%;
-      border-radius: 18px;
-      box-shadow: 0 5px 28px rgba(255, 0, 79, 0.35);
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      object-fit: cover;
-      height: 195px;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.12);
-      box-shadow: 0 0 48px #ff004fdd;
-    }
-
-    footer {
-      text-align: center;
       font-size: 0.9rem;
-      color: #666;
-      padding: 22px 12px;
-      border-top: 1.3px solid #ffd6e3;
-      width: 100%;
-      user-select: none;
+      color: #657786;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
     }
-
-    /* Modal styles */
-    #modal {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background: rgba(0, 0, 0, 0.87);
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
+    .stat-item strong {
+      display: block;
+      font-size: 1.2rem;
+      color: #14171a;
+      font-weight: bold;
+    }
+    .subscribe-box {
+      text-align: center;
+      padding: 20px;
+    }
+    .subscribe-btn {
+      background: #00aff0;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 12px 30px;
       cursor: pointer;
-      user-select: none;
+      transition: background 0.3s;
     }
-    #modal img {
-      max-width: 92vw;
-      max-height: 92vh;
-      border-radius: 18px;
-      box-shadow: 0 0 38px #ff004fcc;
+    .subscribe-btn:hover {
+      background: #008ecf;
     }
-
-    /* Password overlay */
-    #password-overlay {
+    .locked-section {
+      padding: 20px;
+      text-align: center;
+      color: #657786;
+    }
+    .locked-section svg {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 12px;
+      fill: #00aff0;
+    }
+    @media (max-width: 600px) {
+      .profile-info h1 {
+        font-size: 1.4rem;
+      }
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    /* Password screen styles */
+    .password-screen {
       position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background: rgba(224, 247, 255, 0.9);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      z-index: 10000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
       display: flex;
       justify-content: center;
       align-items: center;
-      user-select: none;
-    }
-
-    #password-box {
-      background: white;
-      padding: 30px 40px;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      max-width: 320px;
-      width: 90%;
-    }
-
-    #password-box h2 {
-      margin-bottom: 20px;
-      font-weight: 700;
-      color: #00bfff;
-    }
-
-    #password-input {
-      width: 100%;
-      padding: 14px 20px;
-      font-size: 1.4rem;
-      border: 2px solid #00bfff;
-      border-radius: 12px;
-      outline: none;
-      margin-bottom: 10px;
-      font-family: 'Poppins', sans-serif;
-      text-align: center;
-      user-select: text;
-      -webkit-user-select: text;
-      -moz-user-select: text;
-      -ms-user-select: text;
-      inputmode: numeric;
-    }
-
-    #password-input::-webkit-inner-spin-button,
-    #password-input::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-
-    #password-submit {
-      width: 100%;
-      padding: 14px 0;
-      background: #ff004f;
+      z-index: 9999;
+      flex-direction: column;
       color: white;
-      font-weight: 700;
-      font-size: 1.3rem;
+      backdrop-filter: blur(10px);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .password-screen input {
+      padding: 10px;
       border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      text-transform: uppercase;
-    }
-
-    #password-submit:hover {
-      background: #cc003f;
-    }
-
-    #password-error {
-      color: #ff004f;
-      font-weight: 700;
+      border-radius: 5px;
       margin-top: 10px;
-      min-height: 24px;
+      font-size: 1rem;
     }
-
-    /* Disable right click */
-    body {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+    .password-screen button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: #00aff0;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .password-screen button:hover {
+      background: #008ecf;
+    }
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
     }
   </style>
 </head>
 <body>
+
+<div class="password-screen" id="passwordScreen">
+  <h2>Enter Password</h2>
+  <input type="password" id="passwordInput" placeholder="Password" />
+  <button onclick="checkPassword()">Submit</button>
+</div>
+
+<div class="content blurred" id="content">
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/OnlyFans_logo.svg/1200px-OnlyFans_logo.svg.png" alt="OnlyFans Logo">
+    <div class="more">•••</div>
+  </header>
+
   <div class="container">
-    <header>ONLYFANS 🔥</header>
+    <div class="cover"></div>
 
-    <img
-      class="profile-pic"
-      src="https://i.ibb.co/3yP3BpRJ/IMG-20250531-WA0044.jpg"
-      alt="احمد مهران"
-      draggable="false"
-    />
+    <img class="profile-pic" src="https://i.ibb.co/3yP3BpRJ/IMG-20250531-WA0044.jpg" alt="Ahmed Mehran">
 
-    <div class="info">
-      <h1>احمد مهران</h1>
-      <p>
-        يا صباح الفل عاللي نفسه يتدلع!<br />
-        هنا هتلاقي محتوى <span class="highlight">سخن 🔥</span>، شقاوة مصرية <span class="highlight">وشوية كدا بزيادة 😈</span>،<br />
-        كل حاجة مخصوصة عشان تشبع فضولك وتولع خيالك.<br />
-        الاشتراك: <span class="highlight">20$ شهرياً 💸</span> 🔞
-      </p>
-
-      <div class="sexy-lines">
-        <span>💋 عايز تشوف أكتر من اللي بتحلم بيه؟</span>
-        <span>🔥 فيديوهات وصور حصرية مش هتلاقيها في أي حتة تانية</span>
-        <span>🍑 مفاجآت حلوة للجريئين بس!</span>
-        <span>🔞 محتوى للكبار بس، لو مش مستعد متكملش!</span>
-        <span>✨ اشترك وعيش التجربة مع احمد مهران دلوقتي!</span>
-      </div>
-
-      <a href="https://onlyfans.com/yourprofile" target="_blank" class="btn">اشترك دلوقتي</a>
+    <div class="profile-info">
+      <h1>Ahmed Mehran</h1>
+      <p>🔥 Exclusive spicy content • DM for collabs • 18+ only</p>
     </div>
 
     <div class="stats">
-      <div>
-        <span class="number">325+</span> منشورات
+      <div class="stat-item">
+        <strong>1.3K</strong>
+        Posts
       </div>
-      <div>
-        <span class="number">1.2k</span> مشترك
+      <div class="stat-item">
+        <strong>335.5K</strong>
+        Likes
       </div>
-      <div>
-        <span class="number">5k</span> لايك
+      <div class="stat-item">
+        <strong>238</strong>
+        Media
       </div>
     </div>
 
-    <div class="gallery">
-      <img src="https://i.ibb.co/3yP3BpRJ/IMG-20250531-WA0044.jpg" alt="صورة 1" />
-      <img src="https://i.ibb.co/Cv7VXyM/IMG-20250531-WA0046.jpg" alt="صورة 2" />
-      <img src="https://i.ibb.co/3yP3BpRJ/IMG-20250531-WA0044.jpg" alt="صورة 3" />
-      <img src="https://i.ibb.co/Cv7VXyM/IMG-20250531-WA0046.jpg" alt="صورة 4" />
+    <div class="subscribe-box">
+      <button class="subscribe-btn" onclick="alert('Enter the password to view this profile!')">
+        Subscribe for Free
+      </button>
     </div>
 
-    <footer>© 2025 احمد مهران - كل الحقوق محفوظة</footer>
-  </div>
-
-  <!-- Password overlay -->
-  <div id="password-overlay">
-    <div id="password-box">
-      <h2>ادخل كود الدخول</h2>
-      <input
-        type="password"
-        id="password-input"
-        maxlength="6"
-        pattern="[0-9]*"
-        inputmode="numeric"
-        placeholder="ادخل 6 أرقام"
-        autocomplete="off"
-      />
-      <button id="password-submit">دخول</button>
-      <div id="password-error"></div>
+    <div class="locked-section">
+      <svg viewBox="0 0 24 24"><path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6-7h-1V7a5 5 0 0 0-10 0v3H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2zM9 7a3 3 0 0 1 6 0v3H9V7z"/></svg>
+      <p>Locked content. Subscribe to unlock exclusive content.</p>
     </div>
   </div>
+</div>
 
-  <div id="modal">
-    <img src="" alt="تكبير الصورة" />
-  </div>
+<script>
+  const password = "200711";
 
-  <script>
-    const _pw = "200711";
-    const passwordOverlay = document.getElementById('password-overlay');
-    const passwordInput = document.getElementById('password-input');
-    const passwordSubmit = document.getElementById('password-submit');
-    const passwordError = document.getElementById('password-error');
+  function checkPassword() {
+    const userPassword = document.getElementById('passwordInput').value;
+    const passwordScreen = document.getElementById('passwordScreen');
+    const content = document.getElementById('content');
 
-    // حظر أزرار الفأرة اليمنى
-    document.addEventListener('contextmenu', e => e.preventDefault());
-
-    // حظر F12 و Ctrl+Shift+I و Ctrl+Shift+J و Ctrl+U
-    document.addEventListener('keydown', function(e) {
-      if (
-        e.key === "F12" ||
-        (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) ||
-        (e.ctrlKey && e.key === "U")
-      ) {
-        e.preventDefault();
-      }
-    });
-
-    // السماح للأرقام فقط في الإدخال
-    passwordInput.addEventListener('input', function() {
-      this.value = this.value.replace(/[^0-9]/g, '');
-    });
-
-    function unlockPage() {
-      passwordOverlay.style.display = 'none';
-      passwordInput.value = '';
-      passwordError.textContent = '';
-      document.body.style.userSelect = 'auto';
+    if (userPassword === password) {
+      passwordScreen.style.display = 'none';
+      content.classList.remove('blurred');
+    } else {
+      passwordScreen.style.animation = 'shake 0.5s';
+      setTimeout(() => passwordScreen.style.animation = '', 500);
+      alert("Incorrect password. Try again.");
     }
+  }
 
-    passwordSubmit.addEventListener('click', () => {
-      if (passwordInput.value === _pw) {
-        unlockPage();
-      } else {
-        passwordError.textContent = 'كود خاطئ، جرب تاني.';
-      }
-    });
+  document.getElementById('passwordInput').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      checkPassword();
+    }
+  });
+</script>
 
-    passwordInput.addEventListener('keypress', (e) => {
-      if (e.key === "Enter") {
-        passwordSubmit.click();
-      }
-    });
-
-    // جاليري الصور - تكبير الصور
-    const galleryImages = document.querySelectorAll('.gallery img');
-    const modal = document.getElementById('modal');
-    const modalImg = modal.querySelector('img');
-
-    galleryImages.forEach(img => {
-      img.addEventListener('click', () => {
-        modal.style.display = 'flex';
-        modalImg.src = img.src;
-      });
-    });
-
-    modal.addEventListener('click', () => {
-      modal.style.display = 'none';
-      modalImg.src = '';
-    });
-  </script>
 </body>
 </html>
