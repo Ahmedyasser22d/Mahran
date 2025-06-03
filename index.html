@@ -13,6 +13,13 @@
       box-sizing: border-box;
     }
 
+    body.locked {
+      filter: blur(10px);
+      user-select: none;
+      pointer-events: none;
+      transition: filter 0.3s ease;
+    }
+
     body {
       background: #e0f7ff;
       font-family: 'Poppins', sans-serif;
@@ -27,12 +34,6 @@
       transition: filter 0.3s ease;
     }
 
-    body.locked {
-      filter: blur(10px);
-      user-select: none;
-      pointer-events: none;
-    }
-
     .container {
       width: 100%;
       max-width: 500px;
@@ -45,7 +46,6 @@
       flex-direction: column;
       align-items: center;
       user-select: none;
-      pointer-events: auto;
     }
 
     header {
@@ -108,9 +108,6 @@
       font-weight: 700;
       margin-bottom: 28px;
       line-height: 1.5;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
     }
 
     .sexy-lines span {
@@ -218,6 +215,66 @@
       box-shadow: 0 0 38px #ff004fcc;
     }
 
+    /* Password overlay */
+    #password-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      user-select: auto;
+      pointer-events: auto;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    #password-input {
+      font-size: 1.6rem;
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      width: 280px;
+      max-width: 90vw;
+      margin-bottom: 15px;
+      text-align: center;
+      direction: ltr;
+    }
+
+    #password-submit {
+      background-color: #ff004f;
+      color: white;
+      border: none;
+      padding: 14px 45px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.35s ease, box-shadow 0.35s ease;
+      user-select: none;
+      text-transform: uppercase;
+      box-shadow: 0 10px 26px rgba(255, 0, 79, 0.85);
+    }
+
+    #password-submit:hover {
+      background-color: #cc003f;
+      box-shadow: 0 14px 34px rgba(204, 0, 63, 0.9);
+    }
+
+    #password-error {
+      color: #ff004f;
+      font-weight: 700;
+      margin-top: 10px;
+      min-height: 24px;
+      font-size: 1.1rem;
+      user-select: none;
+    }
+
     @media (max-width: 480px) {
       .container {
         margin: 0 14px;
@@ -245,59 +302,10 @@
       .gallery img {
         height: 230px;
       }
-    }
 
-    /* Password prompt overlay */
-    #password-overlay {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background: rgba(0,0,0,0.9);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 10000;
-      user-select: none;
-      flex-direction: column;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    #password-overlay input {
-      padding: 15px 20px;
-      border-radius: 50px;
-      border: none;
-      font-size: 1.25rem;
-      width: 280px;
-      max-width: 90vw;
-      margin-bottom: 20px;
-      outline: none;
-    }
-
-    #password-overlay button {
-      padding: 15px 50px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      background: #ff004f;
-      border: none;
-      border-radius: 50px;
-      color: white;
-      cursor: pointer;
-      box-shadow: 0 8px 20px rgba(255,0,79,0.7);
-      transition: background-color 0.3s ease;
-      user-select: none;
-    }
-
-    #password-overlay button:hover {
-      background: #cc003f;
-    }
-
-    #password-error {
-      color: #ff004f;
-      font-weight: 700;
-      margin-top: 10px;
-      font-size: 1rem;
-      height: 1.2rem;
+      #password-input {
+        width: 90vw;
+      }
     }
   </style>
 </head>
@@ -328,16 +336,9 @@
         <span>🍑 مفاجآت لا تُقاوم!</span>
         <span>🔞 محتوى خاص للكبار فقط!</span>
         <span>✨ اشترك وعيش التجربة مع احمد مهران!</span>
-        <span>🔥 جسد مشبع بالإثارة والغرائز</span>
-        <span>💦 لحظات ساخنة تخليك تفقد السيطرة</span>
-        <span>🍒 نكهات جديدة كلها إغراء وشهوة</span>
-        <span>💣 استعد لجرعة لا متناهية من اللذة</span>
-        <span>👅 لعاب الشهوة يدعوك للمزيد</span>
-        <span>🔥 متعة حقيقية لكل حواسك</span>
-        <span>😈 أسرار وخبايا ما تنقال إلا هنا</span>
-        <span>💥 تجارب جريئة ترفع دقات قلبك</span>
-        <span>🍑 اكتشف عالم المشاعر المكبوتة</span>
-        <span>💋 استعرض أجمل لحظات الغرام والهيام</span>
+        <span>😍 عاايزه كله! عاايزه كل حاجة!</span>
+        <span>💦 لا تستحي، تعالى شوف الغموض اللي مش هتلاقيه في أي مكان تاني!</span>
+        <span>🔥 مشاهد حصرية وجريئة للعيون المسموح لها بس!</span>
       </div>
 
       <a href="https://onlyfans.com/yourprofile" target="_blank" class="btn">اشترك دلوقتي</a>
@@ -375,13 +376,14 @@
       id="password-input"
       placeholder="ادخل كلمة السر للدخول"
       autocomplete="off"
+      autofocus
     />
     <button id="password-submit">دخول</button>
     <div id="password-error"></div>
   </div>
 
   <script>
-    // Modal image zoom
+    // جافاسكريبت الصورة المكبرة
     const galleryImages = document.querySelectorAll('.gallery img');
     const modal = document.getElementById('modal');
     const modalImg = modal.querySelector('img');
@@ -398,11 +400,12 @@
       modalImg.src = '';
     });
 
-    // Password lock system
+    // حماية كلمة السر
     const passwordOverlay = document.getElementById('password-overlay');
     const passwordInput = document.getElementById('password-input');
     const passwordSubmit = document.getElementById('password-submit');
     const passwordError = document.getElementById('password-error');
+
     const correctPassword = "mehran2025";
 
     function unlockPage() {
@@ -415,22 +418,18 @@
       if (entered === correctPassword) {
         unlockPage();
       } else {
-        passwordError.textContent = "كلمة السر خاطئة، حاول مرة أخرى!";
+        passwordError.textContent = "🚫 كلمة السر غير صحيحة، حاول مرة أخرى!";
         passwordInput.value = '';
         passwordInput.focus();
       }
     });
 
-    passwordInput.addEventListener('keydown', e => {
-      if (e.key === 'Enter') {
+    // Enter key also submits
+    passwordInput.addEventListener('keydown', (e) => {
+      if (e.key === "Enter") {
         passwordSubmit.click();
       }
     });
-
-    // Set focus on input on page load
-    window.onload = function () {
-      passwordInput.focus();
-    };
   </script>
 </body>
 </html>
